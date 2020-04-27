@@ -1,6 +1,10 @@
 // Linear Search
 
 /*
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+
 LinearSearch(array, key)
   for each item in the array
     if item == value
@@ -10,7 +14,7 @@ LinearSearch(array, key)
 #include <stdio.h>
 #include <stdlib.h>
 
-int search(int array[], int n, int key)
+int linearSearch(int array[], int n, int key)
 {
   for (int i = 0; i < n; i++)
     if (array[i] == key)
@@ -26,5 +30,5 @@ int main()
 
   int result = search(array, n, x);
 
-  (result == -1) ? printf("Can not find Element.") : printf("Element found at index: %d\nElement is = %d", result, array[result]);
+  (result == -1) ? printf("Element not found.") : printf("Element found at index: %d\nElement is = %d", result, array[result]);
 }
