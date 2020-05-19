@@ -1,19 +1,21 @@
 # Linear Search in Python
 
-"""
 
-LinearSearch(array, key)
-  for each item in the array
-    if item == value
-      return its index
-
-Time Complexity: O(n)
-
-Space Complexity: O(1)
-
-"""
 
 def linearSearch(array, n, key):
+    """
+    Linear Search Algorithm
+
+    LinearSearch(array, key)
+    for each item in the array
+        if item == value
+        return its index
+
+    Time Complexity: O(n)
+
+    Space Complexity: O(1)
+
+    """
 
     for i in range(0, n):
         if (array[i] == key):
