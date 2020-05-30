@@ -28,7 +28,7 @@ int main()
   int x = 3;
   int n = sizeof(array) / sizeof(array[0]);
 
-  int result = search(array, n, x);
+  int result = linearSearch(array, n, x);
 
   (result == -1) ? printf("Element not found.") : printf("Element found at index: %d\nElement is = %d", result, array[result]);
 }
