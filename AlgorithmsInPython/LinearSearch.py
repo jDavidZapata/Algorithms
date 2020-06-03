@@ -22,13 +22,14 @@ def linearSearch(array, n, key):
             return i
     return -1
 
+if __name__ == '__main__':
 
-array = [7, 9, 11, 55, 13, 3, 0, 49]
-x = 13
-n = len(array)
-result = linearSearch(array, n, x)
-if(result == -1):
-    print("Element not found")
-else:
-    print("Element is: ", array[result])
-    print("Element found at index: ", result)
+    array = [7, 9, 11, 55, 13, 3, 0, 49]
+    x = 13
+    n = len(array)
+    result = linearSearch(array, n, x)
+    if(result == -1):
+        print("Element not found")
+    else:
+        print("Element is: ", array[result])
+        print("Element found at index: ", result)

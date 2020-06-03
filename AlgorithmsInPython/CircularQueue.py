@@ -70,18 +70,19 @@ class MyCircularQueue(object):
         for i in range(self.head, self.tail):
             print(self.queue[i], end=" ")
 
+if __name__ == '__main__':
 
-# Your MyCircularQueue object will be instantiated and called as such:
-obj = MyCircularQueue(5)
-obj.enQueue(1)
-obj.enQueue(2)
-obj.enQueue(3)
-obj.enQueue(4)
-obj.enQueue(5)
+    # Your MyCircularQueue object will be instantiated and called as such:
+    obj = MyCircularQueue(5)
+    obj.enQueue(1)
+    obj.enQueue(2)
+    obj.enQueue(3)
+    obj.enQueue(4)
+    obj.enQueue(5)
 
-print("Initial array")
-print(obj.Display())
+    print("Initial array")
+    print(obj.Display())
 
-print("After removing an element")
-obj.deQueue()
-obj.Display()
+    print("After removing an element")
+    obj.deQueue()
+    obj.Display()
